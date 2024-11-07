@@ -1,20 +1,14 @@
 name: Hello World Java Workflow
 
-on: push  # Trigger: runs on every push
+on: push 
 
 jobs:
   hello-world-job:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out the code
-        uses: actions/checkout@v3  # Pulls repository code into the runner
-
-      - name: Set up Java        # Sets up Java environment
-        uses: actions/setup-java@v3
-        with:
-          java-version: '17'     # Specifies Java version (adjust as needed)
+      - name: Check out the code 
+        uses: actions/checkout@v3 
 
       - name: Say Hello
-        run: echo "Hello, World from Java!"  # Simple echo command
-
+        run: echo "Hello, World!" 
